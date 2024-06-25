@@ -18,7 +18,3 @@
 10.1.0.6
 
 
-[mywebservers:vars]
-key=value
-mywebpackonubuntu= apache2
-mywebpackonredaht= httpd
