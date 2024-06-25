@@ -16,3 +16,9 @@
 
 [myredhatservers]
 10.1.0.6
+
+
+[mywebservers:vars]
+key=value
+mywebpackonubuntu= apache222
+mywebpackonredaht= httpddd
