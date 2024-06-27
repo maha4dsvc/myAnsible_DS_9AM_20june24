@@ -10,5 +10,15 @@
   - name: display myfirst tast result 
     debug: 
        msg: "{{myfirsttastresult}}"
-   
-  
+
+  - name: install git 
+    apt:
+      name: git
+      state: present
+    when: myfirsttastresult.stderr==""
+
+  - name: install tree
+    apt:
+      name: tree
+      state: present 
+    when: myfirsttastresult.stderr !=""
