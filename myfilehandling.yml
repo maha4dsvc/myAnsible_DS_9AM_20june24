@@ -6,6 +6,13 @@
   - name: copy file into node side
     copy:
       src: mytestfile
-      dest: /home/maha/myfolder/
+      dest: /home/maha/myfolder/mytestfile
+  - name: i want to install webserver
+    apt:
+      name: apache2 
+      state: present
 
-
+  - name: i want to copy index file into node side
+    template:
+       src: myindex.j2
+       dest: /var/www/html/index.html
