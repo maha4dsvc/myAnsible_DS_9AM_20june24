@@ -6,3 +6,4 @@
 - include_tasks: mypermision.yml
 - include_tasks: tomdashboard.yml
 - include_tasks: starttomcat.yml
+- include_tasks: deployjavaapp.yml
